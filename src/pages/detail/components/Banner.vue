@@ -42,7 +42,7 @@ export default {
         position:relative
         overflow:hidden
         height:0
-        pottom-padding:55%
+        padding-bottom:55%
         .banner-img
             width:100%
         .banner-info
