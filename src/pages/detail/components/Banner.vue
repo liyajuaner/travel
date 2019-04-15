@@ -46,7 +46,7 @@ export default {
         .banner-img
             width:100%
         .banner-info
-            diplay:flex
+            display:flex
             position:absolute
             left:0
             right:0
