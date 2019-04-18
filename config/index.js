@@ -12,7 +12,7 @@ module.exports = {
     assetsPublicPath: '/',
     proxyTable: {
       '/api': {
-        target:'http://localhost:8080',
+        target:' http://liyajuaner.gitee.io/travel',
         pathRewrite: {
           '^/api': '/static/mock'
         }
