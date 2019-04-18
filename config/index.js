@@ -12,9 +12,10 @@ module.exports = {
     assetsPublicPath: '/',
     proxyTable: {
       '/api': {
-        target:' http://liyajuaner.gitee.io/travel',
+        target:' http://liyajuaner.gitee.io/travel/dist/index.html',
+        changeOrigin : true,
         pathRewrite: {
-          '^/api': '/static/mock'
+          '^/api': ''
         }
       }
     },
