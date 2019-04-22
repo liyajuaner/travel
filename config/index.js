@@ -12,7 +12,7 @@ module.exports = {
     assetsPublicPath: '/',
     proxyTable: {
       '/api': {
-        target:' http://liyajuaner.gitee.io',
+        target:' http://file.ezhensuo.cn/file/mock/city.json',
         changeOrigin : true,
         pathRewrite: {
           '^/api': ''
