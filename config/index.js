@@ -12,16 +12,16 @@ module.exports = {
     assetsPublicPath: '/',
     proxyTable: {
       '/api': {
-        target:' http://39.106.151.76/resume',
+        target:'http://39.106.151.76/resume',
         changeOrigin : true,
         pathRewrite: {
-          '^/api': ''
+          '^/api': '/static/mock'
         }
       }
     },
 
     // Various Dev Server settings
-    host: 'localhost', // can be overwritten by process.env.HOST
+    host: 'http://39.106.151.76/resume', // can be overwritten by process.env.HOST
     port: 8080, // can be overwritten by process.env.PORT, if port is in use, a free one will be determined
     autoOpenBrowser: false,
     errorOverlay: true,
