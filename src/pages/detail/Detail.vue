@@ -29,14 +29,16 @@ export default {
     },
     methods:{
         getDetailInfo () {
-            axios.get('/api/detail.json',{
+            axios.get('http://39.106.151.76/resume',{
+            // axios.get('/api/detail.json',{
                 params:{
                     id: this.$route.params.id
                 }
             }).then(this.handleGetDataSucc)
         },
         handleGetDataSucc (res) {
-            res = res.data
+            console.log(res)
+            res = res.data.detail
             if(res.ret && res.data) {
                 const data = res.data
                 this.sightName = data.sightName

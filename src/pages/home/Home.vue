@@ -38,11 +38,13 @@ export default {
     },
     methods:{
         getHomeInfo () {
-            
-            axios.get('http://39.106.151.76/resume/api/index.json?city=' + this.city).then(this.getHomeInfoSucc)
+            axios.get('http://39.106.151.76/resume').then(this.getHomeInfoSucc)
+            // axios.get('/api/index.json?city=' + this.city).then(this.getHomeInfoSucc)
         },
         getHomeInfoSucc (res) {
-            res = res.data
+            console.log(res);
+            
+            res = res.data.index
             if(res.ret && res.data){
                 const data = res.data
                 this.swiperList = data.swiperList

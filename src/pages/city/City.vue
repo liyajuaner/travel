@@ -29,10 +29,11 @@ export default {
     },
     methods: {
         getCityInfo () {
-            axios.get('/api/city.json').then(this.handleGetCityInfoSucc)
+            axios.get('http://39.106.151.76/resume').then(this.handleGetCityInfoSucc)
+            // axios.get('/api/city.json').then(this.handleGetCityInfoSucc)
         },
         handleGetCityInfoSucc (res) {
-            res = res.data
+            res = res.data.city
             if(res.ret && res.data){
                 const data = res.data
                 this.cities = data.cities

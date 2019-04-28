@@ -10,18 +10,19 @@ module.exports = {
     // Paths
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
-    proxyTable: {
-      '/api': {
-        target:'http://39.106.151.76/resume',
-        changeOrigin : true,
-        pathRewrite: {
-          '^/api': '/static/mock'
-        }
-      }
-    },
+    // proxyTable: {
+    //   '/api': {
+    //     target:'http://localhost:8080',
+    //     changeOrigin : true,
+    //     pathRewrite:{  // 路径重写，
+    //       '^/api': '/static/mock' 
+    //     }
+
+    //   }
+    // },
 
     // Various Dev Server settings
-    host: 'http://39.106.151.76/resume', // can be overwritten by process.env.HOST
+    host: 'localhost', // can be overwritten by process.env.HOST
     port: 8080, // can be overwritten by process.env.PORT, if port is in use, a free one will be determined
     autoOpenBrowser: false,
     errorOverlay: true,
