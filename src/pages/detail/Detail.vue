@@ -29,7 +29,7 @@ export default {
     },
     methods:{
         getDetailInfo () {
-            axios.get('http://39.106.151.76/resume',{
+            axios.get('http://39.96.54.164:18080/resume',{
             // axios.get('/api/detail.json',{
                 params:{
                     id: this.$route.params.id

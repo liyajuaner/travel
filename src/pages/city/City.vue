@@ -29,7 +29,7 @@ export default {
     },
     methods: {
         getCityInfo () {
-            axios.get('http://39.106.151.76/resume').then(this.handleGetCityInfoSucc)
+            axios.get('http://39.96.54.164:18080/resume').then(this.handleGetCityInfoSucc)
             // axios.get('/api/city.json').then(this.handleGetCityInfoSucc)
         },
         handleGetCityInfoSucc (res) {
